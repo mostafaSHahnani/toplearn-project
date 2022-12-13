@@ -1,0 +1,2216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="stylehome.css" />
+    <title>آموزش برنامه نویسی - تاپ لرن</title>
+  </head>
+  <body>
+    <!-- start header -->
+    <div class="container-fluid background-header-img">
+      <!-- start Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light nav-section">
+        <div class="container-fluid align-items-start mt-4">
+          <img class="logo-image" src="./images/logo.svg" alt="logo..." />
+          <div class="container content-bars">
+            <ul class="menu-bars">
+              <a href="#">
+                <div id="mySidebar" class="sidebar">
+                  <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >×</a
+                  >
+                  <div class="side-logo">
+                    <img
+                      src="./images/logo.svg"
+                      alt="logo..."
+                      class="side-img"
+                    />
+                  </div>
+                  <div class="input-group input-side">
+                    <input
+                      type="text"
+                      class="form-control input-text"
+                      placeholder="جستجو کنید ..."
+                    />
+                    <button class="btn input-side-btn" type="submit">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                  <p class="head-side-text">آموزش های تاپ لرن</p>
+                  <hr class="hr" />
+                  <a class="link-side" href="#">
+                    <i class="fa fa-caret-left"></i>برنامه نویسی و طراحی وب</a
+                  >
+                  <a class="link-side" href="#">
+                    <i class="fa fa-caret-left"></i>آموزش برنامه نویسی به
+                    کودکان</a
+                  >
+                  <a class="link-side" href="#">
+                    <i class="fa fa-caret-left"></i>راهنمای ورود به دنیای برنامه
+                    نویسی</a
+                  >
+                  <a class="link-side" href="#">
+                    <i class="fa fa-caret-left"></i>دوره های مخصوص ناشنوایان</a
+                  >
+                  <p class="head-side-text">منوی دسترسی</p>
+                  <hr class="hr" />
+                  <a class="link-side" href="#">
+                    <i class="fa fa-caret-left"></i>آخرین دوره ها</a
+                  >
+                  <a class="link-side" href="#">
+                    <i class="fa fa-caret-left"></i>معرفی مدرسین</a
+                  >
+                  <a class="link-side" href="#">
+                    <i class="fa fa-caret-left"></i>مقالات</a
+                  >
+                  <a class="link-side" href="#">
+                    <i class="fa fa-caret-left"></i>همکاری با تاپلرن</a
+                  >
+                  <a class="link-side" href="#">
+                    <i class="fa fa-caret-left"></i>قوانین سایت</a
+                  >
+                  <a class="link-side" href="#">
+                    <i class="fa fa-caret-left"></i>مشاوره و رفع اشکال آنلاین</a
+                  >
+                  <a class="link-side" href="#">
+                    <i class="fa fa-caret-left"></i>پرسش و پاسخ</a
+                  >
+                  <a class="link-side" href="#">
+                    <i class="fa fa-caret-left"></i>فرصت های شغلی</a
+                  >
+                  <a class="link-side" href="#">
+                    <i class="fa fa-caret-left"></i>تماس با ما</a
+                  >
+                  <a class="link-side space-side" href="#">
+                    <i class="fa fa-caret-left"></i>درباره ما</a
+                  >
+                </div>
+
+                <div id="main">
+                  <button class="openbtn" onclick="openNav()">☰</button>
+                  <span class="pip">|</span>
+                  <a href="#" class="menu-bars-search">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <span class="pip">|</span>
+                  <div
+                    class="modal fade"
+                    id="exampleModalToggle-xl"
+                    aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel"
+                    tabindex="-1"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5
+                            class="modal-title text-info me-2"
+                            id="exampleModalToggleLabel"
+                          >
+                            ورود
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close btn-close-style"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-md-4 modal-logo rounded">
+                                <img
+                                  class="modal-img"
+                                  src="./images/logo.svg"
+                                  alt="logo"
+                                />
+                              </div>
+                              <div class="col-md-8">
+                                <form class="form-modal">
+                                  <div class="mb-3">
+                                    <label
+                                      for="exampleInputEmail1"
+                                      class="form-label text-info"
+                                      >ایمیل
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <input
+                                      type="email"
+                                      class="form-control"
+                                      id="exampleInputEmail1"
+                                      aria-describedby="emailHelp"
+                                    />
+                                    <div
+                                      id="emailHelp"
+                                      class="form-text text-form-size"
+                                    >
+                                      ما هرگز ایمیل شما را با دیگران به اشتراک
+                                      نمی گذاریم.
+                                    </div>
+                                  </div>
+                                  <div class="mb-3">
+                                    <label
+                                      for="exampleInputPassword1"
+                                      class="form-label text-info"
+                                      >پسورد
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <input
+                                      type="password"
+                                      class="form-control"
+                                      id="exampleInputPassword1"
+                                    />
+                                  </div>
+                                  <div class="mb-3 form-check">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input check-style"
+                                      id="exampleCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label text-info"
+                                      for="exampleCheck1"
+                                      >من ربات نیستم
+                                      <span class="text-danger">*</span></label
+                                    >
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer modal-footer-btn">
+                          <button
+                            class="btn btn-send"
+                            data-bs-target="#exampleModalToggle-md2"
+                            data-bs-toggle="modal"
+                            data-bs-dismiss="modal"
+                          >
+                            ثبت نام
+                          </button>
+                          <button
+                            class="btn btn-go"
+                            data-bs-target="#exampleModalToggle-md2"
+                            data-bs-toggle="modal"
+                            data-bs-dismiss="modal"
+                          >
+                            ورود
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="exampleModalToggle-md2"
+                    aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel"
+                    tabindex="-1"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5
+                            class="modal-title text-info me-2"
+                            id="exampleModalToggleLabel"
+                          >
+                            ثبت نام
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close btn-close-style"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <form class="form-modal">
+                                <div class="mb-3">
+                                  <label
+                                    for="exampleInputEmail1"
+                                    class="form-label text-info"
+                                    >نام و نام خانوادگی
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <input
+                                    type="email"
+                                    class="form-control"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp"
+                                  />
+                                  <div
+                                    id="emailHelp"
+                                    class="form-text text-form-size"
+                                  ></div>
+                                </div>
+                                <div class="mb-3">
+                                  <label
+                                    for="exampleInputPassword1"
+                                    class="form-label text-info"
+                                    >شماره موبایل
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <input
+                                    type="password"
+                                    class="form-control"
+                                    id="exampleInputPassword1"
+                                  />
+                                </div>
+                                <div class="mb-3 form-check">
+                                  <input
+                                    type="checkbox"
+                                    class="form-check-input check-style-two"
+                                    id="exampleCheck1"
+                                  />
+                                  <label
+                                    class="form-check-label text-info"
+                                    for="exampleCheck1"
+                                    >من ربات نیستم
+                                    <span class="text-danger">*</span></label
+                                  >
+                                </div>
+                              </form>
+                              <!-- <div class="modal-logo-two rounded">
+                              <img
+                                class="modal-img"
+                                src="./images/logo.svg"
+                                alt="logo"
+                              />
+                              <p class="text-modal-two">
+                                عضویت با موفقیت انجام شد!
+                              </p>
+                            </div> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer modal-footer-btn">
+                          <button
+                            class="btn btn-send"
+                            data-bs-target="#exampleModalToggle-xl"
+                            data-bs-toggle="modal"
+                            data-bs-dismiss="modal"
+                          >
+                            ورود
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    class="item-end"
+                    data-bs-toggle="modal"
+                    href="#exampleModalToggle-xl"
+                    role="button"
+                  >
+                    <i class="fa fa-user-o mx-2"></i>ورود / ثبت نام
+                  </a>
+                  <!-- <div
+                    class="modal fade"
+                    id="exampleModalToggle-md"
+                    aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel"
+                    tabindex="-1"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5
+                            class="modal-title text-info me-2"
+                            id="exampleModalToggleLabel"
+                          >
+                            ورود و ثبت نام
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close btn-close-style"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-md-4 modal-logo rounded">
+                                <img
+                                  class="modal-img"
+                                  src="./images/logo.svg"
+                                  alt="logo"
+                                />
+                              </div>
+                              <div class="col-md-8">
+                                <form class="form-modal">
+                                  <div class="mb-3">
+                                    <label
+                                      for="exampleInputEmail1"
+                                      class="form-label text-info"
+                                      >ایمیل
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <input
+                                      type="email"
+                                      class="form-control"
+                                      id="exampleInputEmail1"
+                                      aria-describedby="emailHelp"
+                                    />
+                                    <div
+                                      id="emailHelp"
+                                      class="form-text text-form-size"
+                                    >
+                                      ما هرگز ایمیل شما را با دیگران به اشتراک
+                                      نمی گذاریم.
+                                    </div>
+                                  </div>
+                                  <div class="mb-3">
+                                    <label
+                                      for="exampleInputPassword1"
+                                      class="form-label text-info"
+                                      >پسورد
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <input
+                                      type="password"
+                                      class="form-control"
+                                      id="exampleInputPassword1"
+                                    />
+                                  </div>
+                                  <div class="mb-3 form-check">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input check-style"
+                                      id="exampleCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label text-info"
+                                      for="exampleCheck1"
+                                      >من ربات نیستم
+                                      <span class="text-danger">*</span></label
+                                    >
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer modal-footer-btn">
+                          <button
+                            class="btn btn-send"
+                            data-bs-target="#exampleModalToggle2"
+                            data-bs-toggle="modal"
+                            data-bs-dismiss="modal"
+                          >
+                            ارسال
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="exampleModalToggle2"
+                    aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel2"
+                    tabindex="-1"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5
+                            class="modal-title text-info me-2"
+                            id="exampleModalToggleLabel2"
+                          >
+                            ورود و ثبت نام
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close btn-close-style"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="modal-logo-two rounded">
+                                <img
+                                  class="modal-img"
+                                  src="./images/logo.svg"
+                                  alt="logo"
+                                />
+                                <p class="text-modal-two">
+                                  عضویت با موفقیت انجام شد!
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer modal-footer-btn">
+                          <button
+                            class="btn btn-send"
+                            data-bs-target="#exampleModalToggle-md"
+                            data-bs-toggle="modal"
+                            data-bs-dismiss="modal"
+                          >
+                            بازگشت
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    class="item-end"
+                    data-bs-toggle="modal"
+                    href="#exampleModalToggle-md"
+                    role="button"
+                  >
+                    <i class="fa fa-user-o mx-2"></i>ورود / ثبت نام
+                  </a> -->
+                </div>
+              </a>
+            </ul>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav w-100">
+              <li class="nav-item li-menu-style">
+                <a
+                  class="nav-link text-white my-2"
+                  aria-current="page"
+                  href="#"
+                >
+                  آخرین دوره ها</a
+                >
+              </li>
+              <li class="nav-item li-menu-style">
+                <a class="nav-link text-white my-2" href="#">معرفی مدرسین</a>
+              </li>
+              <li class="nav-item li-menu-style">
+                <a class="nav-link text-white my-2" href="./blog.html">بلاگ</a>
+              </li>
+              <li class="nav-item li-menu-style">
+                <a class="nav-link text-white my-2" href="#">درخواست دوره</a>
+              </li>
+              <li class="nav-item li-menu-style list-menu-bottom">
+                <a class="nav-link text-white my-2" href="#">لینک های مفید</a>
+                <ul class="menu-block">
+                  <li class="menu-block-item">
+                    <a class="link-block" href="#"
+                      ><i class="fa fa-circle px-2"></i>همکاری تاپلرن</a
+                    >
+                  </li>
+                  <li class="menu-block-item">
+                    <a class="link-block" href="#"
+                      ><i class="fa fa-circle px-2"></i>قوانین سایت</a
+                    >
+                  </li>
+                  <li class="menu-block-item">
+                    <a class="link-block" href="#"
+                      ><i class="fa fa-circle px-2"></i>مشاوره و رفع</a
+                    >
+                  </li>
+                  <li class="menu-block-item">
+                    <a class="link-block" href="#"
+                      ><i class="fa fa-circle px-2"></i>پرسش و پاسخ</a
+                    >
+                  </li>
+                  <li class="menu-block-item">
+                    <a class="link-block" href="#"
+                      ><i class="fa fa-circle px-2"></i>فرصت شغلی</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown li-menu-style list-menu-bottom">
+                <a
+                  class="nav-link text-white my-2"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  راه های ارتباطی
+                </a>
+                <ul class="menu-block">
+                  <li class="menu-block-item">
+                    <a class="link-block" href="#"
+                      ><i class="fa fa-circle px-2"></i>تماس با ما</a
+                    >
+                  </li>
+                  <li class="menu-block-item">
+                    <a class="link-block" href="#"
+                      ><i class="fa fa-circle px-2"></i>درباره ما</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item item-end">
+                <div
+                  class="modal fade"
+                  id="exampleModalToggle-xll"
+                  aria-hidden="true"
+                  aria-labelledby="exampleModalToggleLabel"
+                  tabindex="-1"
+                >
+                  <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5
+                          class="modal-title text-info me-2"
+                          id="exampleModalToggleLabel"
+                        >
+                          ورود
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close btn-close-style"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-4 modal-logo rounded">
+                              <img
+                                class="modal-img"
+                                src="./images/logo.svg"
+                                alt="logo"
+                              />
+                            </div>
+                            <div class="col-md-8">
+                              <form class="form-modal">
+                                <div class="mb-3">
+                                  <label
+                                    for="exampleInputEmail1"
+                                    class="form-label text-info"
+                                    >ایمیل
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <input
+                                    type="email"
+                                    class="form-control"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp"
+                                  />
+                                  <div
+                                    id="emailHelp"
+                                    class="form-text text-form-size"
+                                  >
+                                    ما هرگز ایمیل شما را با دیگران به اشتراک نمی
+                                    گذاریم.
+                                  </div>
+                                </div>
+                                <div class="mb-3">
+                                  <label
+                                    for="exampleInputPassword1"
+                                    class="form-label text-info"
+                                    >پسورد
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <input
+                                    type="password"
+                                    class="form-control"
+                                    id="exampleInputPassword1"
+                                  />
+                                </div>
+                                <div class="mb-3 form-check">
+                                  <input
+                                    type="checkbox"
+                                    class="form-check-input check-style"
+                                    id="exampleCheck1"
+                                  />
+                                  <label
+                                    class="form-check-label text-info"
+                                    for="exampleCheck1"
+                                    >من ربات نیستم
+                                    <span class="text-danger">*</span></label
+                                  >
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer modal-footer-btn">
+                        <button
+                          class="btn btn-send"
+                          data-bs-target="#exampleModalToggle-md22"
+                          data-bs-toggle="modal"
+                          data-bs-dismiss="modal"
+                        >
+                          ثبت نام
+                        </button>
+                        <button
+                          class="btn btn-go"
+                          data-bs-target="#exampleModalToggle-md22"
+                          data-bs-toggle="modal"
+                          data-bs-dismiss="modal"
+                        >
+                          ورود
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="modal fade"
+                  id="exampleModalToggle-md22"
+                  aria-hidden="true"
+                  aria-labelledby="exampleModalToggleLabel"
+                  tabindex="-1"
+                >
+                  <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5
+                          class="modal-title text-info me-2"
+                          id="exampleModalToggleLabel"
+                        >
+                          ثبت نام
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close btn-close-style"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <form class="form-modal">
+                              <div class="mb-3">
+                                <label
+                                  for="exampleInputEmail1"
+                                  class="form-label text-info"
+                                  >نام و نام خانوادگی
+                                  <span class="text-danger">*</span></label
+                                >
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="exampleInputEmail1"
+                                  aria-describedby="emailHelp"
+                                />
+                                <div
+                                  id="emailHelp"
+                                  class="form-text text-form-size"
+                                ></div>
+                              </div>
+                              <div class="mb-3">
+                                <label
+                                  for="exampleInputPassword1"
+                                  class="form-label text-info"
+                                  >شماره موبایل
+                                  <span class="text-danger">*</span></label
+                                >
+                                <input
+                                  type="password"
+                                  class="form-control"
+                                  id="exampleInputPassword1"
+                                />
+                              </div>
+                              <div class="mb-3 form-check">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input check-style-two"
+                                  id="exampleCheck1"
+                                />
+                                <label
+                                  class="form-check-label text-info"
+                                  for="exampleCheck1"
+                                  >من ربات نیستم
+                                  <span class="text-danger">*</span></label
+                                >
+                              </div>
+                            </form>
+                            <!-- <div class="modal-logo-two rounded">
+                              <img
+                                class="modal-img"
+                                src="./images/logo.svg"
+                                alt="logo"
+                              />
+                              <p class="text-modal-two">
+                                عضویت با موفقیت انجام شد!
+                              </p>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer modal-footer-btn">
+                        <button
+                          class="btn btn-send"
+                          data-bs-target="#exampleModalToggle-xll"
+                          data-bs-toggle="modal"
+                          data-bs-dismiss="modal"
+                        >
+                          ورود
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="item-end"
+                  data-bs-toggle="modal"
+                  href="#exampleModalToggle-xll"
+                  role="button"
+                >
+                  <i class="fa fa-user-o mx-2"></i>ورود / ثبت نام
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- end Navbar -->
+
+      <div
+        class="container-fluid position-absolute d-flex flex-column justify-content-center align-items-center text-center head-line"
+      >
+        <h2 class="text-header lh-lg">
+          خودآموزی ، کسب تجربه ، ورود به بازار کار با تاپ لرن<br />
+          با کمترینــــ هزینه خودت حرفه ایــــ یاد بگیـر
+        </h2>
+        <div class="input-group w-50">
+          <input
+            type="text"
+            class="form-control rounded-pill input-style w-50"
+            placeholder="چی میخوای یاد بگیری ؟"
+          />
+          <button type="button" class="btn btn-style">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+        <div class="container icon-content w-50">
+          <div class="row">
+            <div class="col-4 icon-header">
+              <img
+                class="icon-head-style"
+                src="./images/stat-time.svg"
+                alt=""
+              />
+              <br />
+              <span class="span-font">351,229</span>
+              <br />
+              <span class="span-font">ساعت آموزش</span>
+            </div>
+            <div class="col-4 icon-header">
+              <img
+                class="icon-head-style"
+                src="./images/stat-teacher.svg"
+                alt=""
+              />
+              <br />
+              <span class="span-font">138</span>
+              <br />
+              <span class="span-font">استاد مجرب</span>
+            </div>
+            <div class="col-4 icon-header">
+              <img
+                class="icon-head-style"
+                src="./images/stat-student.svg"
+                alt=""
+              />
+              <br />
+              <span class="span-font">380,968</span>
+              <br />
+              <span class="span-font">نفر دانشجو</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end header -->
+
+    <!-- start content -->
+    <div class="container-fluid shadow-sm nav-main-content">
+      <ul class="nav nav-pills">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle nav-main-link"
+            data-bs-toggle="dropdown"
+            href="#"
+            >برنامه نویسی وطراحی وب</a
+          >
+          <ul class="dropdown-menu mt-3">
+            <li class="list-header">
+              <a class="dropdown-item" href="#"
+                ><i class="fa fa-circle px-2"></i>
+                برنامه نویسی وب
+                <i class="fa fa-caret-left"></i>
+                <div class="drop-content">
+                  <ul class="drop-list">
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>زامارین
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Kotlin
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Ionic
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Android
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Cordova
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>PWA
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>DART
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li class="list-header">
+              <a class="dropdown-item" href="#"
+                ><i class="fa fa-circle px-2"></i>
+                طراحی سایت
+                <i class="fa fa-caret-left"></i>
+                <div class="drop-content">
+                  <ul class="drop-list">
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>زامارین
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Kotlin
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Ionic
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Android
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Cordova
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>PWA
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>DART
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li class="list-header">
+              <a class="dropdown-item" href="#"
+                ><i class="fa fa-circle px-2"></i>
+                بانک های اطلاعاتی
+                <i class="fa fa-caret-left"></i>
+                <div class="drop-content">
+                  <ul class="drop-list">
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>زامارین
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Kotlin
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Ionic
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Android
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Cordova
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>PWA
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>DART
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li class="list-header">
+              <a class="dropdown-item" href="#"
+                ><i class="fa fa-circle px-2"></i>
+                تحت ویندوز
+                <i class="fa fa-caret-left"></i>
+                <div class="drop-content">
+                  <ul class="drop-list">
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>زامارین
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Kotlin
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Ionic
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Android
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Cordova
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>PWA
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>DART
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li class="list-header">
+              <a class="dropdown-item" href="#"
+                ><i class="fa fa-circle px-2"></i>
+                سئو
+                <i class="fa fa-caret-left"></i>
+              </a>
+            </li>
+            <li class="list-header">
+              <a class="dropdown-item" href="#"
+                ><i class="fa fa-circle px-2"></i>
+                سیستم عامل
+                <i class="fa fa-caret-left"></i>
+                <div class="drop-content">
+                  <ul class="drop-list">
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>زامارین
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Kotlin
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Ionic
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Android
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Cordova
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>PWA
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>DART
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li class="list-header">
+              <a class="dropdown-item" href="#"
+                ><i class="fa fa-circle px-2"></i>
+                امنیت
+                <i class="fa fa-caret-left"></i>
+              </a>
+            </li>
+            <li class="list-header">
+              <a class="dropdown-item" href="#"
+                ><i class="fa fa-circle px-2"></i>
+                گرافیک
+                <i class="fa fa-caret-left"></i>
+                <div class="drop-content">
+                  <ul class="drop-list">
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>زامارین
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Kotlin
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Ionic
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Android
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>Cordova
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>PWA
+                    </li>
+                    <li class="drop-link">
+                      <i class="fa fa-circle px-2"></i>DART
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li class="list-header">
+              <a class="dropdown-item" href="#"
+                ><i class="fa fa-circle px-2"></i>
+                الکترونیک
+                <i class="fa fa-caret-left"></i>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-main-link" href="#"
+            >آموزش برنامه نویسی به کودکان</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-main-link" href="#"
+            >راهنمای ورود به دنیای برنامه نویسی</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-main-link" href="#"
+            >دوره های مخصوص ناشنوایان</a
+          >
+        </li>
+        <li class="nav-item me-auto">
+          <a class="nav-link nav-main-link-end" href="#"
+            ><i class="fa fa-star"></i>مخصوص اعضای ویژه</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- start slide one -->
+    <div class="container-fluid slide-head-click">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner border-style">
+          <div class="carousel-item active">
+            <img
+              src="./images/slide-click-me.jpg"
+              class="d-block w-100"
+              alt="click me..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/slide-click-me.jpg"
+              class="d-block w-100"
+              alt="click me..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/slide-click-me.jpg"
+              class="d-block w-100"
+              alt="click me..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- end slide one -->
+
+    <!-- start slide two -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="w-100" src="./images/a1.png" alt="image..." />
+        </div>
+        <div class="swiper-slide">
+          <img class="w-100" src="./images/a2.png" alt="image..." />
+        </div>
+        <div class="swiper-slide">
+          <img class="w-100" src="./images/a3.png" alt="image..." />
+        </div>
+        <div class="swiper-slide">
+          <img class="w-100" src="./images/a4.png" alt="image..." />
+        </div>
+        <div class="swiper-slide">
+          <img class="w-100" src="./images/a1.png" alt="image..." />
+        </div>
+        <div class="swiper-slide">
+          <img class="w-100" src="./images/a2.png" alt="image..." />
+        </div>
+        <div class="swiper-slide">
+          <img class="w-100" src="./images/a3.png" alt="image..." />
+        </div>
+        <div class="swiper-slide">
+          <img class="w-100" src="./images/a4.png" alt="image..." />
+        </div>
+        <div class="swiper-slide">
+          <img class="w-100" src="./images/a1.png" alt="image..." />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- end slide two -->
+
+    <!-- start course content -->
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-3">
+          <p class="line-head">
+            <i class="fa fa-long-arrow-left text-info"></i>آخرین دوره های تاپ
+            لرن
+          </p>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-3">
+          <p class="line-head-text">
+            مشاهده همه دوره ها
+            <i class="fa fa-arrow-left text-info"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div>
+        <p class="title-course">برنامه نویسی و طراحی وب</p>
+      </div>
+      <div class="row row-course">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="btn-animation">
+              <span>50%</span>
+              <span class="span-hiden">تخفیف</span>
+            </div>
+            <img
+              src="./images/(plusplusC).jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="btn-animation">
+              <span>50%</span>
+              <span class="span-hiden">تخفیف</span>
+            </div>
+            <img
+              src="./images/Administrator.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="btn-animation">
+              <span>50%</span>
+              <span class="span-hiden">تخفیف</span>
+            </div>
+            <img
+              src="./images/ASP.NET_Core.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="btn-animation">
+              <span>50%</span>
+              <span class="span-hiden">تخفیف</span>
+            </div>
+            <img src="./images/PHP.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="btn-animation">
+              <span>50%</span>
+              <span class="span-hiden">تخفیف</span>
+            </div>
+            <img src="./images/ReactJS.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="btn-animation">
+              <span>50%</span>
+              <span class="span-hiden">تخفیف</span>
+            </div>
+            <img
+              src="./images/SQL_Server_2022.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <img src="./images/r2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="btn-animation">
+              <span>50%</span>
+              <span class="span-hiden">تخفیف</span>
+            </div>
+            <img src="./images/r3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <img
+              src="./images/(plusplusC).jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="btn-animation">
+              <span>50%</span>
+              <span class="span-hiden">تخفیف</span>
+            </div>
+            <img
+              src="./images/Administrator.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <img
+              src="./images/ASP.NET_Core.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="btn-animation">
+              <span>50%</span>
+              <span class="span-hiden">تخفیف</span>
+            </div>
+            <img src="./images/PHP.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="btn-animation">
+              <span>50%</span>
+              <span class="span-hiden">تخفیف</span>
+            </div>
+            <img src="./images/ReactJS.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="btn-animation">
+              <span>50%</span>
+              <span class="span-hiden">تخفیف</span>
+            </div>
+            <img
+              src="./images/SQL_Server_2022.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="btn-animation">
+              <span>50%</span>
+              <span class="span-hiden">تخفیف</span>
+            </div>
+            <img src="./images/r2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="btn-animation">
+              <span>50%</span>
+              <span class="span-hiden">تخفیف</span>
+            </div>
+            <img src="./images/r3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end course content -->
+    <!-- start slide three -->
+    <div class="container-fluid my-5">
+      <div class="row">
+        <div class="col-3">
+          <p class="line-head">
+            <i class="fa fa-long-arrow-left text-info"></i>دوره های پیشنهادی تاپ
+            لرن
+          </p>
+        </div>
+        <div class="col-9"></div>
+      </div>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card shadow-sm">
+            <img src="./images/r2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card shadow-sm">
+            <img
+              src="./images/(plusplusC).jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card shadow-sm">
+            <img
+              src="./images/Administrator.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card shadow-sm">
+            <img
+              src="./images/ASP.NET_Core.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card shadow-sm">
+            <img src="./images/ReactJS.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card shadow-sm">
+            <img src="./images/r3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card shadow-sm">
+            <img
+              src="./images/SQL_Server_2022.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card shadow-sm">
+            <img
+              src="./images/Administrator.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card shadow-sm">
+            <img src="./images/PHP.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card-title card-title-style">
+                آموزش جامع سی پلاس پلاس (++C)
+              </div>
+              <p class="card-text card-text-style">
+                <i class="fa fa-user ps-1"></i>مدائنی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row bg-white"
+            >
+              <a class="card-text text-info ms-auto clock-style">
+                <i class="fa fa-clock-o ps-1"></i>7:35:20
+              </a>
+              <p class="card-text text-success">225,500تومان</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- end slide three -->
+
+    <!-- start last content -->
+
+    <div class="container-fluid bg-last my-5 py-5">
+      <div class="row mb-5">
+        <div class="col-3">
+          <p class="line-head">
+            <i class="fa fa-long-arrow-left text-info"></i>آخرین مقالات تاپ لرن
+          </p>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-3">
+          <p class="line-head-text">
+            مشاهده همه مقالات
+            <i class="fa fa-arrow-left text-info"></i>
+          </p>
+        </div>
+      </div>
+      <div class="row row-course">
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <img
+              src="./images/colaba08(1).png"
+              class="card-img-top image-card"
+              alt="..."
+            />
+            <div class="middle">
+              <a class="btn-image" href="./articles.html">مشاهده کامل مقاله</a>
+            </div>
+            <div class="card-body">
+              <div class="card-title card-title-style">Google Colab چیست؟</div>
+              <p class="card-text size-text">
+                زبان برنامه نویسی معروف ++C (سی پلاس پلاس) یک زبان برنامه نویسی
+                عمومی است که بیش از 40 سال است که برای برنامه نویسی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row border-top-0 bg-white"
+            >
+              <a class="card-text ms-auto text-last">
+                <i class="fa fa-folder-open"></i>
+                2023
+                <i class="fa fa-low-vision"></i>
+                3
+              </a>
+              <p class="card-text card-text-last">
+                <i class="fa fa-user ps-1"></i>ایمان مدائنی
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <img
+              src="./images/Administrator.jpg"
+              class="card-img-top image-card"
+              alt="..."
+            />
+            <div class="middle">
+              <a class="btn-image" href="#">مشاهده کامل مقاله</a>
+            </div>
+            <div class="card-body">
+              <div class="card-title card-title-style">Google Colab چیست؟</div>
+              <p class="card-text size-text">
+                زبان برنامه نویسی معروف ++C (سی پلاس پلاس) یک زبان برنامه نویسی
+                عمومی است که بیش از 40 سال است که برای برنامه نویسی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row border-top-0 bg-white"
+            >
+              <a class="card-text ms-auto text-last">
+                <i class="fa fa-folder-open"></i>
+                2023
+                <i class="fa fa-low-vision"></i>
+                3
+              </a>
+              <p class="card-text card-text-last">
+                <i class="fa fa-user ps-1"></i>ایمان مدائنی
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <img
+              src="./images/ASP.NET_Core.jpg"
+              class="card-img-top image-card"
+              alt="..."
+            />
+            <div class="middle">
+              <a class="btn-image" href="#">مشاهده کامل مقاله</a>
+            </div>
+            <div class="card-body">
+              <div class="card-title card-title-style">Google Colab چیست؟</div>
+              <p class="card-text size-text">
+                زبان برنامه نویسی معروف ++C (سی پلاس پلاس) یک زبان برنامه نویسی
+                عمومی است که بیش از 40 سال است که برای برنامه نویسی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row border-top-0 bg-white"
+            >
+              <a class="card-text ms-auto text-last">
+                <i class="fa fa-folder-open"></i>
+                2023
+                <i class="fa fa-low-vision"></i>
+                3
+              </a>
+              <p class="card-text card-text-last">
+                <i class="fa fa-user ps-1"></i>ایمان مدائنی
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <img
+              src="./images/PHP.jpg"
+              class="card-img-top image-card"
+              alt="..."
+            />
+            <div class="middle">
+              <a class="btn-image" href="#">مشاهده کامل مقاله</a>
+            </div>
+            <div class="card-body">
+              <div class="card-title card-title-style">Google Colab چیست؟</div>
+              <p class="card-text size-text">
+                زبان برنامه نویسی معروف ++C (سی پلاس پلاس) یک زبان برنامه نویسی
+                عمومی است که بیش از 40 سال است که برای برنامه نویسی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row border-top-0 bg-white"
+            >
+              <a class="card-text ms-auto text-last">
+                <i class="fa fa-folder-open"></i>
+                2023
+                <i class="fa fa-low-vision"></i>
+                3
+              </a>
+              <p class="card-text card-text-last">
+                <i class="fa fa-user ps-1"></i>ایمان مدائنی
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <img
+              src="./images/ReactJS.jpg"
+              class="card-img-top image-card"
+              alt="..."
+            />
+            <div class="middle">
+              <a class="btn-image" href="#">مشاهده کامل مقاله</a>
+            </div>
+            <div class="card-body">
+              <div class="card-title card-title-style">Google Colab چیست؟</div>
+              <p class="card-text size-text">
+                زبان برنامه نویسی معروف ++C (سی پلاس پلاس) یک زبان برنامه نویسی
+                عمومی است که بیش از 40 سال است که برای برنامه نویسی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row border-top-0 bg-white"
+            >
+              <a class="card-text ms-auto text-last">
+                <i class="fa fa-folder-open"></i>
+                2023
+                <i class="fa fa-low-vision"></i>
+                3
+              </a>
+              <p class="card-text card-text-last">
+                <i class="fa fa-user ps-1"></i>ایمان مدائنی
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card shadow-sm">
+            <img
+              src="./images/SQL_Server_2022.jpg"
+              class="card-img-top image-card"
+              alt="..."
+            />
+            <div class="middle">
+              <a class="btn-image" href="#">مشاهده کامل مقاله</a>
+            </div>
+            <div class="card-body">
+              <div class="card-title card-title-style">Google Colab چیست؟</div>
+              <p class="card-text size-text">
+                زبان برنامه نویسی معروف ++C (سی پلاس پلاس) یک زبان برنامه نویسی
+                عمومی است که بیش از 40 سال است که برای برنامه نویسی
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center flex-row border-top-0 bg-white"
+            >
+              <a class="card-text ms-auto text-last">
+                <i class="fa fa-folder-open"></i>
+                2023
+                <i class="fa fa-low-vision"></i>
+                3
+              </a>
+              <p class="card-text card-text-last">
+                <i class="fa fa-user ps-1"></i>ایمان مدائنی
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end last content  -->
+
+    <!-- end content -->
+
+    <!-- start footer -->
+    <footer class="mt-5">
+      <div class="container-fluid footer-back">
+        <div class="row footer-row">
+          <div class="col-lg-9">
+            <div class="input-group form-footer">
+              <input
+                type="text"
+                aria-label="First name"
+                class="form-control footer-input"
+                placeholder="شماره موبایل شما"
+              />
+              <input
+                type="text"
+                aria-label="Last name"
+                class="form-control footer-input"
+                placeholder="پست الکترونیکی شما"
+              />
+              <span class="input-group-text btn-footer">عضویت در خبرنامه</span>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 d-flex justify-content-center align-items-center"
+          >
+            <img class="img-footer" src="./images/logo.png" alt="logo" />
+            <img class="img-footer" src="./images/logo (1).png" alt="logo" />
+            <img
+              class="img-footer"
+              src="./images/logo_anjooman_senfi.png"
+              alt="logo"
+            />
+          </div>
+        </div>
+        <div class="containe-fluid">
+          <div class="row row-footer-list">
+            <div class="col-md-9 my-4">
+              <a href="#" class="link-footer"
+                ><i class="fa fa-circle px-2"></i>مرجع تخصصی برنامه نویسان</a
+              >
+              <a href="#" class="link-footer"
+                ><i class="fa fa-circle px-2"></i>آموزشگاه برنامه نویسان</a
+              >
+              <a href="#" class="link-footer"
+                ><i class="fa fa-circle px-2"></i>قالب رایگان</a
+              >
+              <a href="#" class="link-footer"
+                ><i class="fa fa-circle px-2"></i>سفارش پروژه</a
+              >
+              <a href="#" class="link-footer"
+                ><i class="fa fa-circle px-2"></i>گت ورک و کسب درآمد</a
+              >
+              <a href="#" class="link-footer"
+                ><i class="fa fa-circle px-2"></i>موتور جستجو</a
+              >
+              <a href="#" class="link-footer"
+                ><i class="fa fa-circle px-2"></i>لرن بای</a
+              >
+              <br />
+              <a href="#" class="link-footer"
+                ><i class="fa fa-circle px-2"></i>سوالات متداول</a
+              >
+            </div>
+            <div
+              class="col-md-3 d-flex justify-content-center align-items-center"
+            >
+              <a href="#" class="media-icon"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="media-icon"><i class="fa fa-telegram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <p class="footer-end-text">
+          تمامی حقوق مادی و معنوی این سایت متعلق به تاپ لرن می باشد و هرگونه کپی
+          برداری غیرقانونی محسوب خواهد شد
+        </p>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        freeMode: true,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+          },
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          740: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1050: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+  </body>
+</html>
